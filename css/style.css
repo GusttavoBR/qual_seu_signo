@@ -1,0 +1,55 @@
+div#dt {
+    font          : normal 20px Arial;
+    width         : 100%;
+    vertical-align: middle;
+}
+
+body {
+    background-color: rgb(64, 85, 105);
+}
+
+input#date {
+    height: 30px;
+    width: 150px;
+    background-color: rgba(134, 155, 155, 0.52);
+    border-radius: 15px;
+    
+}
+
+select#meses {
+    font      : normal 20px Arial;
+    margin-top: 20px;
+    width     : 100%;
+}
+
+#date {
+    width: 100%;
+}
+
+#bto {
+    height       : 50px;
+    width        : 150px;
+    font-weight  : bolder;
+    border-radius: 15px;
+}
+
+#all {
+    text-align: center;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 70px;
+    width           : 500px;
+    background-color: rgb(255, 255, 255);
+    position        : absolute;
+    left            : 40%;
+    top             : 50%;
+    margin-left     : -110px;
+    margin-top      : -250px;
+    border-radius   : 17px;
+}
+
+div#res {
+    margin-bottom: 30px;
+    font: normal 15px Arial;
+    font-size: 40px
+}
