@@ -1,13 +1,15 @@
+var res = document.querySelector("#res")
+
 function descobrir() {
-    var res = document.querySelector("#res")
     const date = document.querySelector("#date").value
-    res.innerHTML = ""
+
+    if (!date) return alert('Você deve digitar uma data valida')
     const [ano, mes, dia] = new Date(date).toISOString().split("T")[0].split("-")
-    if(!ano, mes, dia == "") alert('Você deve digitar uma data valida')
+
     console.log(mes)
-    
-   
-    
+
+
+
     switch (mes) {
         case "01":
             res.innerHTML = Number(dia) <= 20 ? "Capricornio" : "Aquario"
@@ -58,6 +60,9 @@ function descobrir() {
 
         default:
             break;
-            
+
     }
 }
+
+const date = document.getElementById(`date`)
+date.addEventListener("click", () => { res.innerHTML = `Seu signo é ? ` })
